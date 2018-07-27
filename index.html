@@ -1,0 +1,371 @@
+<!doctype html>
+
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1200" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="description" content="みんなの情熱大学-SpringBootセミナープレゼンテーション資料" />
+
+  <title>みんなの情熱大学</title>
+
+  <!--link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /-->
+  <link href="./css/impress.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="impress">
+  <!-- page:cover -->
+  <div id="cover" class="step" data-x="-4500" data-y="-2000" data-z="0" data-rotate-x="-40" data-rotate-y="0">
+    <div id="big"><u style="color:white;"><c class="white" style="font-size:84px">SpringBootを使いこなせ！<br/>ネットや書籍では得られない<br/>実践的勉強会</c></u></div>
+  </section>
+  </div>
+  <!-- page:self-introduce -->
+  <div id="self-introduce" class="step slide" data-x="-4500" data-y="-3500" data-z="0" data-rotate-x="0" data-rotate-y="0">
+    <p id="big"><u>自己紹介</u></p>
+    <span class="icon"><img src="./images/icon.jpg" alt="icon" style="object-fit: contain;width:300px;"></span>
+    <span class="introduce">
+      <p><u>(株)C-Solution</u> 取締役 <b class="positioning3" style="font-size:32pt;">角 貴浩</b></p>
+      <hr/>
+      <span style="font-size:20pt;"><br>
+        <p>新卒でSIerに就職後、初めてプログラミングに触れる。</p>
+        <p>以来、約15年Webアプリケーション開発一筋に従事。</p>
+        <p>近年はオンプレミスなシステムのクラウド移行プロジェクトにアーキテクトとして複数携わる。</p>
+        <p>その後、企業内のクラウドシステム化の推進をミッションとした部署に移り、</p>
+        <p>アーキテクチャ提案や、開発環境のモダン化・クラウド化技術に関する教育・研修講師を務める。</p>
+      </span>
+    </span>
+  </div>
+  <!-- page:beginning1 -->
+  <div id="beginning1" class="step slide" data-x="-1500" data-y="-2000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="15">
+      <p id="big" style="display:inline-block;width:100%;margin:0 auto;">
+        <img src="./images/icon-spring-boot.svg" style="object-fit: contain;width:100px;"/>
+        <b class="positioning2">SpringBoot</b>
+      </p>
+      <span style="font-size:40px;font-weight:bold;">
+        <ul class="middlemargin">
+          <li>Pivotal社が提供するJavaプラットフォームのフレームワーク(?)</li>
+          <li>近年Javaのフレームワーク(?)として大注目</li>
+        </ul>
+      </span>
+  </div>
+  <!-- page:beginning2 -->
+  <!-- 問題提起 -->
+  <div id="beginning2" class="step slide" data-x="-600" data-y="-2000" data-z="-700" data-rotate-x="-40" data-rotate-y="-50" data-rotate-z="45">
+    <p id="big">しかし・・・</p>
+    <ul class="middlemargin">
+      <li>SpringFrameworkとSpringBoot <b class="rotating2"><span class="red">何が違うの・・・？</span></b></li>
+      <li>SpringBootを勉強すればSpringFrameworkは<b class="rotating3"><span class="red">覚えなくていい・・・？</span></b></li>
+      <li>いまいち使いこなせてる<b class="rotating4"><span class="red">自信がない・・・</span></b></li>
+      <li>トラブルシューティングが<b class="rotating4"><span class="red">苦手・・・</span></b></li>
+    </ul>
+  </div>
+  <!-- page:beginning3 -->
+  <!-- ゴールの紹介 -->
+  <div id="beginning3" class="step slide" data-x="-1000" data-y="-2000" data-z="3000" data-rotate-x="0" data-rotate-y="0" data-rotate-z="360">
+    <p id="big">このセミナーで</p>
+    <ul class="center">
+      <li>SpringFrameworkの全容を正しくイメージ！</li>
+      <li>SpringBootの特徴を理解する！</li>
+      <li>↓</li>
+      <li><span style="color:blue;"><u>理解度・学習スピードを<b class="positioning3 red">UP!</b></u></span></li>
+      <li><u>実務で役立つ<b class="rotating4 red">コツ</b>を掴む！</u></li>
+    </ul>
+  </div>
+  <!-- page:Agenda -->
+  <!-- 具体的な道筋の提示 -->
+  <div id="Agenda" class="step slide" data-x="-1000" data-y="-3000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="180">
+    <p id="big"><u>Agenda</u></p>
+    <ul style="margin:0 0 0 100px;">
+      <li class="bold">SpringProjectの全体像を把握しよう
+        <ul>
+          <li>SpringProjectの全体像</li>
+          <li>SpringFrameworkってなに？</li>
+          <li>SpringBootってなに？</li>
+        </ul>
+      </li>
+      <li class="bold">SpringBootの特徴を知ろう
+        <ul>
+          <li>Webコンテナの組み込みビルド</li>
+          <li>Bean定義の自動化</li>
+          <li>パッケージ管理の簡素化</li>
+        </ul>
+      </li>
+      <li class="bold">SpringBootの歩き方
+        <ul>
+          <li>情報検索のコツ</li>
+          <li>Starterを使いこなす</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- page:outline1 -->
+  <div id="outline1" class="step slide" data-x="500" data-y="-3000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="90">
+    <p id="big"><u>Agenda</u></p>
+    <ul style="margin:0 0 0 100px;">
+      <li class="red bold">SpringProjectの全体像を把握しよう
+        <ul>
+          <li>SpringProjectの全体像</li>
+          <li>SpringFrameworkってなに？</li>
+          <li>SpringBootってなに？</li>
+        </ul>
+      </li>
+      <li class="bold">SpringBootの特徴を知ろう
+        <ul>
+          <li>Webコンテナの組み込みビルド</li>
+          <li>Bean定義の自動化</li>
+          <li>パッケージ管理の簡素化</li>
+        </ul>
+      </li>
+      <li class="bold">SpringBootの歩き方
+        <ul>
+          <li>情報検索のコツ</li>
+          <li>Starterを使いこなす</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- page:cover-summary -->
+  <div id="cover-summary" class="step" data-x="2000" data-y="-3000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+    <q id="big" class="white">SpringProjectの全体像</q>
+  </div>
+  <!-- page:spring1 -->
+  <div id="spring1" class="step" data-x="2000" data-y="-3000" data-z="0" data-rotate-x="90" data-rotate-y="30" data-rotate-z="10">
+    <img src="./images/spring1.png" />
+  </div>
+  <!-- page:aboutspring -->
+  <div id="aboutspring" class="step" data-x="-6000" data-y="-1000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+    <q id="big" class="white">ややこしいので</q><br/>
+    <q id="big" class="white">主なSpringコンポーネントを分類して      <b class="white">➜</b><br/>みました</q>
+  </div>
+  <!-- page:overall-spring -->
+  <div id="overall-spring" class="step" data-x="-4500" data-y="-1000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0">
+    <img src="./images/SpringClassification.png" />
+  </div>
+  <!-- page:aboutcore-->
+  <div id="aboutcore" class="step" data-x="-4500" data-y="-500" data-z="-400" data-rotate-x="110" data-rotate-y="0" data-rotate-z="0">
+    <img src="./images/springcore.png" />
+  </div>
+  <!-- page:di0 -->
+  <div id="aboutdi0" class="step slide" data-x="-1000" data-y="-1000" data-z="0" data-rotate-x="0" data-rotate-y="180" data-rotate-z="10">
+    <p id="big"><u>DI(依存性の注入)とは？</u></p>
+    <q>依存する機能・クラスを外部から注入すること</q>
+    <q>Springでは<b class="positioning4 red">DIコンテナ</b>が実現してくれる</b></q>
+  </div>
+  <!-- page:aboutdi -->
+  <div id="aboutdi" class="step" data-x="-1000" data-y="-1000" data-z="-2000" data-rotate-x="0" data-rotate-y="180" data-rotate-z="20">
+    <img src="./images/di1.png" />
+  </div>
+  <!-- page:aboutdi2-->
+  <div id="aboutdi2" class="step" data-x="-1000" data-y="-1000" data-z="-4000" data-rotate-x="0" data-rotate-y="180" data-rotate-z="30">
+    <img src="./images/di2.png" />
+  </div>
+  <!-- page:aboutaop -->
+  <div id="aboutaop" class="step slide" data-x="1000" data-y="-1000" data-z="0" data-rotate-x="0" data-rotate-y="180" data-rotate-z="10">
+    <p id="big"><u>AOP(アスペクト指向プログラミング)とは</u></p>
+    <q>クラス横断的な処理を元の処理に影響しないように差し込む技法のこと</q>
+    <q>主に<br/><b>Advice(差し込む処理内容)</b>と<b>JoinPoint(処理を差し込むタイミング)</b><br/>で構成される</q>
+  </div>
+  <!-- page:aop1 -->
+  <div id="aop1" class="step" data-x="1000" data-y="-1000" data-z="2000" data-rotate-x="0" data-rotate-y="180" data-rotate-z="20">
+    <img src="./images/aop1.png" />
+  </div>
+  <!-- page:aop2 -->
+  <div id="aop2" class="step slide" data-x="1000" data-y="-1000" data-z="4000" data-rotate-x="0" data-rotate-y="180" data-rotate-z="30">
+
+    <p id="big">主に</p>
+    <ul class="point">
+      <li><u>ログ出力</u></li>
+      <li><u>トランザクションのBegin/Close処理</u></li>
+    </ul>
+    <br />
+    <p class="bold" style="text-align:right;margin:0 10% 0;">の差し込みに使われる</p>
+  </div>
+  <!-- page:specifycore -->
+  <div id="specifycore" class="step" data-x="4500" data-y="-1000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="180">
+    <p id="big" style="margin-left:-300pt">DI・AOPにより</p>
+    <ul>
+      <li class="bold white" style="margin-left:300pt">変更に強く</li>
+      <li class="bold white" style="margin-left:260pt">再利用性の高い</li>
+    </ul>
+    <br />
+    <p class="bold" style="text-align:right;margin:0 10% 0;">アプリケーション開発が可能に！</p>
+  </div>
+  <!-- page:aboutcodelayer -->
+  <div id="aboutcodelayer" class="step" data-x="6000" data-y="-1000" data-z="0" data-rotate-x="0" data-rotate-z="90">
+    <img src="./images/codelayer.png" />
+  </div>
+  <!-- page:aboutother -->
+  <div id="aboutother" class="step" data-x="-4500" data-y="1000" data-z="0" data-rotate-x="0" data-rotate-y="0">
+    <img src="./images/otherlayer.png" />
+  </div>
+  <!-- page:aboutother2 -->
+  <div id="aboutother2" class="step slide" data-x="-3000" data-y="1000" data-z="0" data-rotate-x="0" data-rotate-y="0">
+    <p>簡単に言うと・・・</p>
+    <br/>
+    <p class="bold"><u>SpringCloud</u></p>
+    <ul class="lowmargin">
+      <li><u>Webサービスとして</u>の運用・管理に便利な機能を提供する仕組み
+      <ul>
+        <li>アプリケーションの冗長化</li>
+        <li>Config情報の中央集中管理</li>
+      </ul></li>
+    </ul>
+    <br>
+    <p><u class="red bold">SpringBoot</u></p>
+    <ul class="lowmargin">
+      <li><u>アプリケーションとして</u>の運用・管理に便利な機能を提供する仕組み
+      <ul>
+        <li>Webコンテナの組み込み</li>
+        <li>パッケージ依存管理の簡易化</li>
+      </ul></li>
+    </ul>
+  </div>
+  <!-- page:re-overall-spring-->
+  <div id="re-overall-spring" class="step" data-x="-1500" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0">
+    <img src="./images/SpringClassification.png" />
+  </div>
+  <!-- page:cover-springfw -->
+  <div id="cover-springfw" class="step" data-x="0" data-y="3000" data-z="0" data-rotate-x="0" data-rotate-y="0">
+    <q id="big" class="white">SpringFrameworkって何？</q>
+  </div>
+  <!-- page:about-springfw -->
+  <div id="about-springfw" class="step slide" data-x="600" data-y="2200" data-z="300" data-rotate-x="-20" data-rotate-y="0" data-rotate-z="-45">
+    <q style="display:inline-block;"><img src="./images/icon-spring-framework.svg" style="object-fit:contain;width:100px;">SpringFrameworkは・・・</q>
+    <ul class="lowmargin">
+      <li>様々なレイヤ・役割のライブラリ・フレームワークを組み合わせて利用するもの</li>
+      <li>フルスタックなフレームワーク<b>ではない</b></li>
+      <li>「SpringFramework」という単体のフレームワークは存在しない</li>
+    </ul>
+    <p id="big" style="margin-top:50px;">SpringFramework<b class="positioning3" style="color:red;">s</b></p>
+    <p style="margin-left:350px;font-size:40pt">とでも呼ぶべき<b class="rotating4">ライブラリ群</b></p>
+  </div>
+  <!-- page:springfw-kinds -->
+  <div id="springfw-kinds" class="step slide" data-x="800" data-y="3200" data-z="500" data-rotate-x="20" data-rotate-y="0" data-rotate-z="30">
+    <p>主なSpringFramework</p>
+    <ul>
+      <li>フレームワーク
+        <ul>
+          <li><u class="bold">SpringMVC</u><br/>MVCアーキテクチャによる枠組みを提供するフレームワーク<br/>SpringFrameworkを代表するものとして最もよく使われる</li>
+          <li><u class="bold">SpringBatch</u><br/>javaによるバッチ処理を実現する為の実装枠組みを提供する。</li>
+        </ul>
+      </li>
+      <li>ライブラリ
+        <ul>
+          <li><u class="bold">SpringData</u><br/>RDBなどのデータストアとの橋渡しを担当するライブラリ</li>
+          <li><u class="bold">SpringSecurity</u><br/>認証・認可処理機能を提供するライブラリ</li>
+        </ul>
+      </li>
+      <li>その他
+        <ul>
+          <li><u class="bold">SpringRoo</u><br/>ソースファイルや単体テストコード・または設定ファイル等を自動生成する開発補助ツール</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- page:cover-boot -->
+  <div id="cover-boot" class="step" data-x="-4500" data-y="3000" data-z="0" data-rotate-x="0" data-rotate-y="0">
+    <q id="big" class="white">SpringBootって何？</q>
+  </div>
+  <!-- page:spring4-1 -->
+  <div id="spring4-1" class="step" data-x="-4500" data-y="3000" data-z="0" data-rotate-x="90" data-rotate-y="0" data-rotate-y="0">
+    <p class="white bold">SpringBootは</p>
+    <q class="big center white bold">SpringFrameworkの中の<b class="white">1つ</b>なの<b class="rotating2" style="color:red;">?</></q>
+  </div>
+  <!-- page:spring4-2 -->
+  <div id="spring4-2" class="step" data-x="-4500" data-y="3000" data-z="0" data-rotate-x="90" data-rotate-y="450" data-rotate-y="-10">
+    <div class="red" style="font-size:120pt;"><c>NO!</c></div>
+  </div>
+  <!-- page:spring4-3 -->
+  <div id="spring4-3" class="step" data-x="-1500" data-y="3000" data-z="0" data-rotate-x="0" data-rotate-y="0">
+    <p class="white bold">SpringBootは</p>
+    <q class="big center white">SpringFrameworkを<br/><b class="positioning3">より簡単</b>に<br/><b class="positioning4">より効率的</b>に<br/>使うための仕組み</q>
+  </div>
+  <!-- page:spring4-4 -->
+  <div id="spring4-4" class="step" data-x="-1000" data-y="3700" data-z="0" data-rotate-x="45" data-rotate-y="30">
+    <q class="big center white">これまでの開発効率向上の為のフレームワーク<b class="white">ではなく、</b></q>
+    <q class="big center"><u class="white">アプリケーションとしての管理・運用効率を上げるための</u><br/></q>
+    <q class="big center"><u class="white">1つ上のレイヤのフレームワーク</u><br/></q>
+  </div>
+  <!-- page:summary-cover -->
+  <div id="summary-cover" class="step" data-x="-1000" data-y="5000" data-z="0" data-rotate-x="0" data-rotate-y="0">
+    <q id="big" class="white">ここまでのまとめ</q>
+  </div>
+  <!-- page:summary1 -->
+  <div id="summary1" class="step slide" data-x="-600" data-y="5400" data-z="300" data-rotate-x="-20" data-rotate-y="0" data-rotate-z="-45">
+    <p id="big">ここまでのまとめ</p>
+    <ul>
+      <li style="color:red;">SpringProjectの全体像
+        <ul>
+          <li>多種多様なライブラリ・フレームワークを提供しているProject</li>
+          <li>DI・AOPを土台にした変更に強く、再利用性の高い開発環境を提供してくれる</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- page:summary2 -->
+  <div id="summary2" class="step slide" data-x="-600" data-y="4700" data-z="600" data-rotate-x="-20" data-rotate-y="0" data-rotate-z="30">
+    <p id="big">ここまでのまとめ</p>
+    <ul>
+      <li style="color:red;">SpringFrameworkってなに？
+        <ul>
+          <li>開発効率のUPのためのソースコードレイヤのフレームワーク</li>
+          <li>様々なレイヤ・役割のライブラリ・フレームワークを組み合わせて構成する</li>
+          <li>ライブラリ・フレームワーク群である</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- page:summary3 -->
+  <div id="summary3" class="step slide" data-x="-1900" data-y="6000" data-z="-300" data-rotate-x="20" data-rotate-y="0" data-rotate-z="20">
+    <p id="big">ここまでのまとめ</p>
+    <ul>
+      <li style="color:red;">SpringBootってなに？
+        <ul>
+          <li>SpringFrameworkをより効率的に扱う為の仕組み</li>
+          <li>ソースコードではなく、アプリケーションレベルの管理・運用のためのフレームワーク</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- page:outline2 -->
+  <div id="outline2" class="step slide" data-x="-200" data-y="700" data-z="6000" data-rotate-x="0" data-rotate-y="0" data-scale="1" />
+    <p id="big"><u>Agenda</u></p>
+    <ul style="margin:0 0 0 100px;">
+      <li class="bold">SpringProjectの全体像を把握しよう
+        <ul>
+          <li>SpringProjectの全体像</li>
+          <li>SpringFrameworkってなに？</li>
+          <li>SpringBootってなに？</li>
+        </ul>
+      </li>
+      <li class="red bold"><a href="./boot.html" target="_blrank">SpringBootの特徴を知ろう</a>
+        <ul>
+          <li>Webコンテナの組み込みビルド</li>
+          <li>Bean定義の自動化</li>
+          <li>パッケージ管理の簡素化</li>
+        </ul>
+      </li>
+      <li class="bold">SpringBootの歩き方
+        <ul>
+          <li>情報検索のコツ</li>
+          <li>Starterを使いこなす</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- page:overview -->
+  <div id="overview" class="step"  data-x="-200" data-y="700" data-z="7000" data-rotate-x="0" data-rotate-y="0" data-scale="1" />
+  <div id="overview2" class="step"  data-x="-2000" data-y="-500" data-z="5000" data-rotate-x="0" data-rotate-y="0" data-scale="1" />
+  <div id="overview3" class="step"  data-x="3500" data-y="-500" data-z="5000" data-rotate-x="0" data-rotate-y="0" data-scale="1" />
+  <div id="overview4" class="step"  data-x="-2000" data-y="1000" data-z="5000" data-rotate-x="0" data-rotate-y="0" data-scale="1" />
+  <div id="overview5" class="step"  data-x="3500" data-y="1000" data-z="5000" data-rotate-x="0" data-rotate-y="0" data-scale="1" />
+</div>
+<div id="impress-toolbar"></div>
+
+<script src="./js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

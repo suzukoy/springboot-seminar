@@ -1,0 +1,274 @@
+<!doctype html>
+
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1200" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="description" content="みんなの情熱大学-SpringBootセミナープレゼンテーション資料" />
+
+  <title>みんなの情熱大学</title>
+
+  <!--link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /-->
+  <link href="./css/impress.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="impress">
+  <!-- page:cover-boot -->
+  <div id="cover-boot" class="step" data-x="-4500" data-y="-2000" data-z="0" data-rotate-x="0" data-rotate-y="0">
+    <q id="big" class="white">SpringBootの特徴</q>
+  </div>
+  <!-- page:aboutboot -->
+  <div id="aboutboot" class="step slide" data-x="-4500" data-y="-3000" data-z="0" data-rotate-x="20" data-rotate-y="0">
+      <p id="big" style="display:inline-block;width:100%;margin:0 auto;">
+        <img src="./images/icon-spring-boot.svg" style="object-fit: contain;width:100px;"/>
+        <b class="positioning2">SpringBootとは(おさらい)</b>
+      </p>
+      <ul class="middlemargin">
+        <li>SpringFrameworkをより簡単に・効率的に扱う為の仕組み</li>
+        <li>ソースコードではなく、アプリケーションレベルの管理・運用のためのフレームワーク</li>
+      </ul>
+  </div>
+  <!-- page:overallboot -->
+  <div id="overallboot" class="step" data-x="-3000" data-y="-3000" data-z="0" data-rotate-x="60" data-rotate-y="0">
+    <img src="./images/overallboot.png" />
+  </div>
+  <!-- page:cover-build -->
+  <div id="cover-build" class="step" data-x="0" data-y="-3000" data-z="0" data-rotate-x="20" data-rotate-y="10" data-rotate-z="10">
+    <q id="big" class="white">特徴① Webコンテナの組み込みビルド</q>
+    <p class="white">~Spring Boot Maven Plugin~</p>
+  </div>
+  <!-- page:aboutboot1-1 -->
+  <div id="aboutboot1-1" class="step slide" data-x="1200" data-y="-3000" data-z="-2000" data-rotate-x="0" data-rotate-y="0">
+    <q style="margin-top:200px">Webコンテナを内包した実行可能jarを生成できる</q>
+    <center>↓</center>
+    <q id="big">アプリケーションデプロイが変わる！</q>
+  </div>
+  <!-- page:aboutboot1-2 -->
+  <div id="aboutboot1-2" class="step" data-x="1800" data-y="-3000" data-z="-2580" data-rotate-x="0" data-rotate-y="90">
+    <img src="./images/pastdeploy.png" />
+  </div>
+  <!-- page:aboutboot1-3 -->
+  <div id="aboutboot1-3" class="step" data-x="1220" data-y="-3000" data-z="-3200" data-rotate-x="0" data-rotate-y="180">
+    <img src="./images/bootdeploy.png" />
+  </div>
+  <!-- page:aboutboot1-4 -->
+  <div id="aboutboot1-4" class="step" data-x="600" data-y="-3000" data-z="-2620" data-rotate-x="0" data-rotate-y="270">
+    <img src="./images/boot1-4.png" />
+  </div>
+  <!-- page:cover-autoconfigure -->
+  <div id="cover-autoconfigure" class="step" data-x="6100" data-y="-2000" data-z="1000" data-rotate-x="0" data-rotate-y="-20">
+    <q id="big" class="white">特徴② Bean定義の自動化</q>
+    <p class="white">~AutoConfigure~</p>
+  </div>
+  <!-- page:cover-autoconfigure2 -->
+  <div id="cover-autoconfigure2" class="step" data-x="-4500" data-y="-1000" data-z="0" data-rotate-x="90" data-rotate-y="0">
+    <q style="font-size:28pt;">と言われても・・・</q><br/><br/>
+    <q id="big" class="white">Beanって何<b class="rotating3 white">？</b></q><br/>
+    <q id="big" class="white">Bean定義って何<b class="rotating3 white">？</b></q>
+  </div>
+  <!-- page:cover-autoconfigure3 -->
+  <div id="cover-autoconfigure3" class="step" data-x="-3000" data-y="-1000" data-z="0" data-rotate-x="90" data-rotate-y="0">
+    <p id="big" class="white">Beanとは</p>
+    <ul style="list-style:none;width:99%">
+      <li class="white">Spring(DIコンテナ)に管理させるクラスのこと</li>
+    </ul>
+  </div>
+  <!-- page:bean-image -->
+  <div id="bean-image" class="step" data-x="-3000" data-y="-1000" data-z="0" data-rotate-x="180" data-rotate-y="0">
+    <img src="./images/bean.png"/>
+  </div>
+  <!-- page:cover-autoconfigure4 -->
+  <div id="cover-autoconfigure4" class="step slide" data-x="-1500" data-y="-1000" data-z="0" data-rotate-x="90" data-rotate-z="90">
+    <p id="big">Bean定義とは</p>
+    <q><u>Beanの設定を定義したもの</u></q>
+    <ul>
+      <li>Beanとして管理するクラスを設定</li>
+      <li>Beanの初期化内容のパラメータ・プロパティ値を設定</li>
+    </ul>
+      <!--li>Bean定義の設定形式３つ
+        <ul>
+            <li>XMLファイルで設定</li>
+            <li>アノテーションで設定</li>
+            <li>javaコードで設定</li>
+        </ul>
+      </li-->
+    <img style="width:99%;object-fit: contain;width:1000px;" src="./images/beandi.png"/>
+  </div>
+
+  <!-- page:aboutboot2-2 -->
+  <div id="aboutboot2-2" class="step" data-x="-3000" data-y="-1000" data-z="2000" data-rotate-x="0" data-rotate-y="0">
+      <p style="margin:300px 0 0 0">SpringBoot以前は・・・</p>
+      <img  src="./images/aboutboot2-3.png"/>
+  </div>
+  <!-- page:aboutboot2-1 -->
+  <!--div id="aboutboot2-1" class="step slide" data-x="-3000" data-y="-1000" data-z="1000" data-rotate-x="0" data-rotate-y="0">
+    <q>Bean定義の自動化</q>
+    <center>↓</center>
+    <q id="big">ライブラリ設定の手間が省ける！</q>
+  </div-->
+  <!-- page:aboutboot2-3 -->
+  <div id="aboutboot2-3" class="step" data-x="0" data-y="-2000" data-z="1000" data-rotate-x="25" data-rotate-y="-30">
+    <q id="big" class="white">SpringBootでは・・・</q>
+    <ul class="lowmargin">
+      <li class="white">主だったライブラリのBean定義を<u class="white">自動的に</u>読み込んでくれる</li>
+      <li class="white">開発者は<u class="white">Bean定義を用意する事なく、</u>各ライブラリをBeanとして利用することができる</li>
+      <li class="white">しかも初期化処理・デフォルト設定も自動でしてくれる</li>
+      <li class="white">もちろんカスタマイズも可能</li>
+    </ul>
+  </div>
+  <!-- page:aboutboot2-4 -->
+  <!--div id="aboutboot2-4" class="step" data-x="3000" data-y="-1000" data-z="1000" data-rotate-x="0" data-rotate-y="0">
+
+  </div-->
+  <!-- page:aboutboot2-5 -->
+  <!--div id="aboutboot2-5" class="step slide" data-x="4500" data-y="-1000" data-z="1000" data-rotate-x="0" data-rotate-y="0">
+    <q>SpringBootのBean定義</q>
+    <ul>
+      <li>基本的に自動</li>
+      <li>ほとんど気にする必要がない</li>
+      <li>もちろんカスタマイズも可能</li>
+    </ul>
+  </div-->
+  <!-- page:cover-starter -->
+  <div id="cover-starter" class="step" data-x="6000" data-y="-1000" data-z="1000" data-rotate-x="0" data-rotate-y="0">
+    <q id="big" class="white">特徴③ パッケージ依存管理の簡易化</q>
+    <p class="white">~SpinrgBootStarter~</p>
+  </div>
+  <!-- page:aboutboot3-1 -->
+  <div id="aboutboot3-1" class="step slide" data-x="-4500" data-y="0" data-z="1000" data-rotate-x="0" data-rotate-y="0">
+    <q style="display:inline-block;"><img src="./images/icon-spring-framework.svg" style="object-fit:contain;width:100px;">[おさらい]SpringFrameworkは・・・</q>
+    <ul class="lowmargin">
+      <li>様々なレイヤ・役割のライブラリ・フレームワークを組み合わせて利用するもの</li>
+      <li>フルスタックなフレームワーク<b>ではない</b></li>
+      <li style="color:#dcdcdc;">「SpringFramework」という単体のフレームワークは存在しない</li>
+    </ul>
+  </div>
+  <!-- page:aboutboot3-2 -->
+  <div id="aboutboot3-2" class="step slide" data-x="-3000" data-y="0" data-z="1000" data-rotate-x="0" data-rotate-z="15">
+    <q style="display:inline-block;">しかし、その柔軟さ故に</q>
+    <ul class="lowmargin point">
+      <li>パッケージ依存管理が複雑化</li>
+      <li>pomファイルの肥大化(Maven)</li>
+      <li>各ライブラリのver不整合問題が起こる</li>
+    </ul>
+    <br />
+    <p class="bold" style="text-align:right;margin:0 10% 0;">といった弊害が生まれる</p>
+  </div>
+  <!-- page:aboutboot3-3 -->
+  <div id="aboutboot3-3" class="step" data-x="-1500" data-y="0" data-z="1000" data-rotate-x="0" data-rotate-z="-15">
+    <p id="big">この問題を解決するのが</p>
+    <ul class="center">
+      <li class="bold white" style="margin-top:-50px; font-size:60pt;">SpringBootStarter</li>
+    </ul>
+  </div>
+  <!-- page:aboutboot3-4 -->
+  <div id="aboutboot3-4" class="step" data-x="0" data-y="0" data-z="1000" data-rotate-x="0" data-rotate-y="20">
+    <img src="./images/aboutboot3-5.png" />
+  </div>
+  <!-- page:aboutboot3-5 -->
+  <div id="aboutboot3-5" class="step" data-x="1500" data-y="0" data-z="1000" data-rotate-x="0" data-rotate-y="-20">
+    <img src="./images/aboutboot3-6.png" />
+  </div>
+  <!-- page:aboutboot3-6 -->
+  <div id="aboutboot3-6" class="step" data-x="3000" data-y="0" data-z="1000" data-rotate-x="0" data-rotate-y="0">
+    <img src="./images/aboutboot3-7.png" />
+  </div>
+  <div id="aboutboot3-7" class="step" data-x="3000" data-y="0" data-z="1000" data-rotate-x="90" data-rotate-y="0">
+    <q id="big" class="white">Starterの実体はpomファイル</q>
+    <p class="center"><a target="_blank" href="https://github.com/spring-projects/spring-boot/blob/v2.0.3.RELEASE/spring-boot-project/spring-boot-starters/spring-boot-starter-web/pom.xml">Ex) spring-boot-starter-web のpomファイル</a></p>
+  </div>
+  <!-- page:summary-boot1 -->
+  <div id="summary-boot1" class="step slide" data-x="4500" data-y="0" data-z="1000" data-rotate-x="0" data-rotate-y="0">
+    <p id="big">ここまでのまとめ</p>
+    <ul>
+      <li>SpringBoot 押さえるべき３つの特徴
+        <ul>
+          <li>Webコンテナの組み込みビルド ~Spring Boot Maven Plugin~</li>
+          <li>Bean定義の自動化 ~AutoConfigure~</li>
+          <li>パッケージ管理の簡素化 ~SpringBootStarter~</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- page:summary-boot2 -->
+  <div id="summary-boot2" class="step slide" data-x="5400" data-y="500" data-z="1200" data-rotate-x="-20" data-rotate-z="40">
+    <p id="big">ここまでのまとめ</p>
+    <ul>
+      <li style="color:red;">Webコンテナの組み込みビルド ~Spring Boot Maven Plugin~
+        <ul>
+          <li>webコンテナを内包した実行可能jarを生成できる</li>
+          <li>サーバ構築コストを削減</li>
+          <li>あらゆる環境で同等のアプリケーションを起動できる</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- page:summary-boot3 -->
+  <div id="summary-boot3" class="step slide" data-x="6000" data-y="700" data-z="1400" data-rotate-x="-30" data-rotate-z="80">
+    <p id="big">ここまでのまとめ</p>
+    <ul>
+      <li style="color:red;">Bean定義の自動化 ~AutoConfigure~
+        <ul>
+          <li>主だったライブラリのBean定義を<u>自動的に</u>読み込んでくれる</li>
+          <li>開発者は<u>Bean定義を用意する事なく、</u>各ライブラリをBeanとして利用することができる</li>
+          <li>初期化処理・デフォルト設定もよしなにしてくれる</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- page:summary-boot4 -->
+  <div id="summary-boot4" class="step slide"  data-x="6000" data-y="0" data-z="2000" data-rotate-x="0" data-rotate-z="120">
+    <p id="big">ここまでのまとめ</p>
+    <ul>
+      <li style="color:red;">パッケージ管理の簡素化 ~SpringBootStarter~
+        <ul>
+          <li>主な依存ライブラリを一括して管理・提供してくれる</li>
+          <li>SpringBootが提供してくれるpomファイルの雛形のようなもの</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- page:outline2 -->
+  <div id="outline2" class="step slide" data-x="6000" data-y="2000" data-z="1000" data-rotate-x="0" data-rotate-y="0">
+    <p id="big"><u>Agenda</u></p>
+    <ul style="margin:0 0 0 100px;">
+      <li class="bold">SpringProjectの全体像を把握しよう
+        <ul>
+          <li>SpringProjectの全体像</li>
+          <li>SpringFrameworkってなに？</li>
+          <li>SpringBootってなに？</li>
+        </ul>
+      </li>
+      <li class="bold">SpringBootの特徴を知ろう
+        <ul>
+          <li>Webコンテナの組み込みビルド</li>
+          <li>Bean定義の自動化</li>
+          <li>パッケージ管理の簡素化</li>
+        </ul>
+      </li>
+      <li class="red bold"><a href="./knowledge.html" target="_blank">SpringBootの歩き方</a>
+        <ul>
+          <li>情報検索のコツ</li>
+          <li>Starterを使いこなす</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- page:overview -->
+  <div id="overview" class="step"  data-x="-500" data-y="0" data-z="7000" data-rotate-x="0" data-rotate-y="0" data-scale="1" />
+  <div id="overview2" class="step"  data-x="-2000" data-y="-500" data-z="5000" data-rotate-x="0" data-rotate-y="0" data-scale="1" />
+  <div id="overview3" class="step"  data-x="3500" data-y="-500" data-z="5000" data-rotate-x="0" data-rotate-y="0" data-scale="1" />
+  <div id="overview4" class="step"  data-x="-2000" data-y="1000" data-z="5000" data-rotate-x="0" data-rotate-y="0" data-scale="1" />
+  <div id="overview5" class="step"  data-x="3500" data-y="1000" data-z="5000" data-rotate-x="0" data-rotate-y="0" data-scale="1" />
+</div>
+<div id="impress-toolbar"></div>
+
+<script src="./js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
